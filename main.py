@@ -3,8 +3,6 @@ import sys
 import qrcode
 import os
 
-
-
 def generateQR(url: str, save_location: str, filename: str):
     qr = qrcode.make(url)
     qr.save(save_location + filename)
